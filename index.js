@@ -10,7 +10,7 @@ const eth = require('ethereumjs-wallet');
 program
   .version(version)
   .description(`Generate multiple wallets`)
-  .option('-g, --generate <n>', 'Number of wallets to generate')
+  .option('-g, --generate <n>', 'Number of wallets to generate', 1)
   .parse(process.argv);
 
 if (program.generate && program.generate > 0) {
